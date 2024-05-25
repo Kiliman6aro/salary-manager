@@ -1,7 +1,11 @@
 package ua.pp.hophey.salarymanager;
 
+import ua.pp.hophey.greeting.UserGreeting;
+import ua.pp.hophey.greeting.WorldGreeting;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello World");
+        WorldGreeting.greet();
+        UserGreeting.greet("Pavel");
     }
 }
