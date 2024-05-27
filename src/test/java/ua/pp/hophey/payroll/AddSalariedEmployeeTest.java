@@ -25,11 +25,11 @@ public class AddSalariedEmployeeTest {
         Employee employee = PayrollDatabase.getEmployee(id);
         assertEquals("Bob", employee.getName(),"Employee should be added to the database");
         PaymentClassification pc = employee.getPaymentClassification();
-        assertTrue((pc instanceof SalariedClassification), "Payment specification is Salaried");
+        assertTrue((pc instanceof SalariedClassification), "Payment specification is not Salaried");
         PaymentSchedule ps = employee.getPaymentSchedule();
-        assertTrue((ps instanceof MonthlySchedule), "Payment schedule is monthly");
+        assertTrue((ps instanceof MonthlySchedule), "Payment schedule is not monthly");
 
         PaymentMethod pm = employee.getPaymentMethod();
-        assertTrue((pm instanceof HoldMethod), "Payment method is hold method.");
+        assertTrue((pm instanceof HoldMethod), "Payment method is not hold method.");
     }
 }
