@@ -1,4 +1,4 @@
-package ua.pp.hophey.payroll.transaction;
+package ua.pp.hophey.payroll.transaction.employee;
 
 import ua.pp.hophey.payroll.PayrollDatabase;
 import ua.pp.hophey.payroll.entity.Employee;
@@ -6,8 +6,9 @@ import ua.pp.hophey.payroll.payment.classification.PaymentClassification;
 import ua.pp.hophey.payroll.payment.method.HoldMethod;
 import ua.pp.hophey.payroll.payment.method.PaymentMethod;
 import ua.pp.hophey.payroll.schedule.PaymentSchedule;
+import ua.pp.hophey.payroll.transaction.Transaction;
 
-public abstract class AddEmployeeTransaction implements Transaction{
+public abstract class AddEmployeeTransaction implements Transaction {
     private int id;
     private String name;
 

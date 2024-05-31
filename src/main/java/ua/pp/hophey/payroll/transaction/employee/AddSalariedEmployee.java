@@ -1,4 +1,4 @@
-package ua.pp.hophey.payroll.transaction;
+package ua.pp.hophey.payroll.transaction.employee;
 
 import ua.pp.hophey.payroll.payment.classification.PaymentClassification;
 import ua.pp.hophey.payroll.payment.classification.SalariedClassification;
