@@ -5,7 +5,7 @@ import ua.pp.hophey.payroll.entity.Employee;
 import java.util.HashMap;
 
 public class PayrollDatabase {
-    private static HashMap<Integer, Employee> employees = new HashMap<>();
+    private static final HashMap<Integer, Employee> employees = new HashMap<>();
 
     public static void addEmployee(Employee employee) {
         employees.put(employee.getId(), employee);
